@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="icon" href="../../favicon.ico">
+    
+    <title>3D Geo Viewer for Integrity Tests</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <!-- link href="dashboard.css" rel="stylesheet" -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.10.1/ol.min.css" type="text/css" >
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.10.1/ol.min.js" type="text/javascript"></script>
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r72/three.js"></script>
+    <script src="threejs/js/geometries/DecalGeometry.js"></script>
+    <script src='threejs/js/libs/dat.gui.min.js'></script>
+    <script src="threejs/js/controls/TrackballControls.js"></script>
+    <script src="threejs/js/SkyShader.js"></script>
+</head>
+
+<body id="body">
+
+    
+
+    <div class="main" id="mainid">    
+        <div id="mapo" class="map"></div> 
+    </div>
+
+    <div id="webgldiv">
+
+        <div id='webgl'></div>
+
+        <div class="table-responsive" id="div1">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Link</th>
+                        <th>Sensor</th>
+                        <th>Pipeline</th>
+                        <th>Linha</th>
+                        <th>Lat</th>
+                        <th>Long</th>
+                        <th>Ordem</th>
+                        <th>Tipo</th>
+                        <th>Distancia ao inicio</th>
+                    </tr>
+                </thead>
+                <tbody id="sensors" style="    background-color: white;">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+     <script src="js/main.js"></script>
+    
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+   
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap1&sensor=false" async defer></script>
+</body>
+
+</html>
